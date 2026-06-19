@@ -220,7 +220,11 @@ img {
   border-bottom: 1px solid var(--color-border);
   /* background: linear-gradient(180deg, var(--color-surface-strong), var(--color-bg)); */
 }
-
+@media print {
+  .site-header {
+    display: none;
+  }
+}
 .site-topbar {
   width: min(var(--container-max), 100% - 3rem);
   margin: 0 auto;
@@ -235,6 +239,47 @@ img {
 .brand-lockup {
   display: grid;
   gap: 0.2rem;
+}
+/* 
+Styles for the wordmark and logo in the header. 
+The wordmark is a flex container that holds the SVG logo. 
+The SVG logo has a fixed width of 250px and maintains its aspect ratio. 
+The paths within the SVG have specific fill and stroke properties to match the site's color scheme.
+ */
+.wordmark {
+  display: flex;
+  width: 100%;
+  max-width: 30rem;
+  padding: 0 0 0 0px;
+  border-radius: 0;
+}
+
+.wordmark svg {
+ width: 250px;
+ height: auto; 
+  border-radius: 0;
+}
+
+.wm-consilium-path {
+  fill-rule: nonzero;
+  stroke-width: 0.411098;
+  stroke-linecap: round;
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
+}
+
+.wm-peregrine-path {
+  fill-rule: nonzero;
+  stroke-width: 0.1;
+  stroke-linecap: round;
+ fill: var(--color-text);
+  stroke: var(--color-text);
+}
+
+#wm_line {
+  stroke-width: 2.13068;
+  stroke: var(--color-accent);
+  fill: var(--color-accent);
 }
 
 .site-kicker {
