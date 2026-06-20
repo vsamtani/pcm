@@ -11,21 +11,11 @@ category = "categories"
 author = "authors"
 
 [menus]
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
 
 [[menus.main]]
-name = 'Briefings'
-pageRef = '/posts'
+name = 'Insights'
+pageRef = '/insights'
 weight = 20
-
-[[menus.main]]
-name= 'Docs'
-pageRef = '/docs'
-weight = 30
-
 
 [[menus.main]]
 name = 'About'
