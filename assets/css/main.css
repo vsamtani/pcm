@@ -257,28 +257,24 @@ The paths within the SVG have specific fill and stroke properties to match the s
 .wordmark svg {
  width: 250px;
  height: auto; 
-  border-radius: 0;
 }
 
-.wm-consilium-path {
+.wordmark path {
   fill-rule: nonzero;
-  stroke-width: 0.411098;
+  stroke: none;
   stroke-linecap: round;
-  fill: var(--color-accent);
-  stroke: var(--color-accent);
 }
 
-.wm-peregrine-path {
-  fill-rule: nonzero;
-  stroke-width: 0.1;
-  stroke-linecap: round;
+.wordmark path.wm-peregrine-path {
  fill: var(--color-text);
-  stroke: var(--color-text);
 }
 
-#wm_line {
-  stroke-width: 2.13068;
-  stroke: var(--color-accent);
+.wordmark path.wm-consilium-path {
+  fill: var(--color-accent);
+}
+
+.wordmark rect.wm_line {
+  stroke: none;
   fill: var(--color-accent);
 }
 
