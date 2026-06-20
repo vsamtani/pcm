@@ -3,6 +3,8 @@ title = "Submisson"
 date = 2026-02-14T00:00:00Z
 type = "page"
 layout = "page"
+[build]
+  list = "never"
 +++
 
 ## Submissions: Join the Weave

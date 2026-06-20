@@ -15,13 +15,19 @@ author = "authors"
 [[menus.main]]
 name = 'Insights'
 pageRef = '/insights'
-weight = 20
+weight = 10
 
 [[menus.main]]
 name = 'About'
 pageRef = '/pages/about'
 identifier = 'about'
-weight = 60
+weight = 20
+
+[[menus.main]]
+name = 'Contact'
+pageRef = '/pages/contact'
+identifier = 'contact'
+weight = 30
 
 
 [permalinks]
@@ -59,10 +65,10 @@ paginationSize = 6
 summaryLength = 180
 
 [params.features]
-enableSearch = true
+enableSearch = false
 enableBackToTop = true
 enablePagination = true
-enableThemeToggle = true
+enableThemeToggle = false
 enableMath = true
 enableBreadcrumbs = false
 enableRelatedPosts = true
