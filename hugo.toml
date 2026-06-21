@@ -26,6 +26,14 @@ weight = 20
 [[menus.main]]
 name = 'Contact'
 pageRef = '/pages/contact'
+identifier = 'contact_sub'
+parent = 'about'
+weight = 20
+
+
+[[menus.main]]
+name = 'Contact'
+pageRef = '/pages/contact'
 identifier = 'contact'
 weight = 30
 
